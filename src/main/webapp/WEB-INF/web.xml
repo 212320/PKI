@@ -1,0 +1,51 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>lista-tabel</servlet-name>
+    <servlet-class>pl.test.TableList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lista-tabel</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>widok-tabeli</servlet-name>
+    <servlet-class>pl.test.RecordList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>widok-tabeli</servlet-name>
+    <url-pattern>/widok</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>nowy-rekord</servlet-name>
+    <servlet-class>pl.test.NewRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>nowy-rekord</servlet-name>
+    <url-pattern>/nowy</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>edytuj-rekord</servlet-name>
+    <servlet-class>pl.test.EditRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>edytuj-rekord</servlet-name>
+    <url-pattern>/edycja</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>usun-rekord</servlet-name>
+    <servlet-class>pl.test.DeleteRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>usun-rekord</servlet-name>
+    <url-pattern>/usun</url-pattern>
+  </servlet-mapping>
+</web-app>
